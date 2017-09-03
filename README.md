@@ -1,6 +1,6 @@
 # hadoop学习笔记
 
-1.
+## 1.
 {
 hadoop HDFS 分布式文件系统;
 hadoop MapReduce 2.0 YARN;
@@ -8,7 +8,7 @@ Spark;
 机器学习;
 }
 
-2/3. 系统和虚拟机的安装;
+## 2/3. 系统和虚拟机的安装;
 {
 Virtual box 下的虚拟机的安装;
 先安装虚拟机，然后在虚拟机中创建linux机器。之后下载ubuntu镜像iso，在linux机器的设置-存储中添加该镜像设备。启动linux。出现安装界面;
@@ -17,7 +17,7 @@ Virtual box 下的虚拟机的安装;
 在Linux虚拟机的选项卡-设备-共享剪贴板-双向;
 }
 
-4.hadoop single node cluster的安装;
+## 4.hadoop single node cluster的安装;
 {
 1)安装JDK;
 java -version;
