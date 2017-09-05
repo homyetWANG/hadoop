@@ -1,11 +1,14 @@
 # hadoop学习笔记
 
+基础知识
+========
+
 ## 1.
 {
-hadoop HDFS 分布式文件系统;
-hadoop MapReduce 2.0 YARN;
-Spark;
-机器学习;
+    hadoop HDFS 分布式文件系统;
+    hadoop MapReduce 2.0 YARN;
+    Spark;
+    机器学习;
 }
 
 ## 2/3. 系统和虚拟机的安装;
