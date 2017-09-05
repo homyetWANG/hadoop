@@ -22,19 +22,29 @@ Virtual box 下的虚拟机的安装;
 
 ## 4.hadoop single node cluster的安装;
 {
-1)安装JDK;
-java -version;
-sudo apt-get update;
-sudo apt-get install default-jdk;
-java -version;
-update-alternatives --display java;
+### 1)安装JDK <br>
+java -version <br>
+sudo apt-get update <br>
+sudo apt-get install default-jdk <br>
+java -version <br>
+update-alternatives --display java <br>
 
-2)設定 SSH 無密碼登入
-sudo apt-get install ssh(不要分号);
-sudo apt-get install rsync; 
-ssh-keygen -t dsa -P '' -f ~/.ssh/id_dsa; 
-ll /home/hduser/.ssh;
-ll ~/.ssh;
-cat ~/.ssh/id_dsa.pub >> ~/.ssh/authorized_keys;
+### 2)設定 SSH 無密碼登入 <br>
+sudo apt-get install ssh <br>
+sudo apt-get install rsync <br> 
+ssh-keygen -t dsa -P '' -f ~/.ssh/id_dsa <br> 
+ll /home/hduser/.ssh <br>
+ll ~/.ssh <br>
+cat ~/.ssh/id_dsa.pub >> ~/.ssh/authorized_keys <br>
 
-}
+### 3)下载安装hadoop <br>
+wget http://ftp.twaren.net/Unix/Web/apache/hadoop/common/hadoop-2.6.0/hadoop-2.6.0.tar.gz  <br>
+`wget`下载 <br>
+sudo tar -zxvf hadoop-2.6.0.tar.gz <br>
+`tar` 解压 <br>
+sudo mv hadoop-2.6.0 /usr/local/hadoop <br>
+`mv` move 移动到指定目录 <br>
+ ll /usr/local/hadoop  <br>
+ `ll`查看指定目录 <br>
+ 
+ ### 4)设置环境变量 <br>
