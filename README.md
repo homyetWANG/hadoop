@@ -5,10 +5,10 @@
 
 ## 1.
 {
-    hadoop HDFS 分布式文件系统;
-    hadoop MapReduce 2.0 YARN;
-    Spark;
-    机器学习;
+hadoop HDFS 分布式文件系统 <br>
+    hadoop MapReduce 2.0 YARN <br>
+    Spark <br>
+    机器学习 <br>
 }
 
 ## 2/3. 系统和虚拟机的安装;
