@@ -4,12 +4,12 @@
 ========
 
 ## 1.
-{
-hadoop HDFS 分布式文件系统 <br>
-    hadoop MapReduce 2.0 YARN <br>
-    Spark <br>
-    机器学习 <br>
-}
+
+hadoop `HDFS` 分布式文件系统 <br>
+hadoop `MapReduce 2.0 YARN` <br>
+[`Spark`](https://baike.baidu.com/item/SPARK/2229312?fr=aladdin "百度百科") <br>
+机器学习 <br>
+
 
 ## 2/3. 系统和虚拟机的安装;
 {
