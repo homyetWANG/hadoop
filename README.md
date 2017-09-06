@@ -63,5 +63,37 @@ sudo mv hadoop-2.6.0 /usr/local/hadoop <br>
 >> export HADOOP_COMMON_HOME=$HADOOP_HOME  <br>
 >> export HADOOP_HDFS_HOME=$HADOOP_HOME  <br>
 >> export YARN_HOME=$HADOOP_HOME  <br>
->>>> export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib"  <br>
+>> export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib"  <br>
 >> export JAVA_LIBRARY_PATH=$HADOOP_HOME/lib/native:$JAVA_LIBRARY_PATH
+
+source ~/.bashrc <br>
+使之生效 <br>
+
+ ### 5)修改hadoop配置文件 <br>
+#### 修改hadoop-env.sh
+sudo gedit /usr/local/hadoop/etc/hadoop/hadoop-env.sh <br>
+輸入下列內容:
+export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64 <br>
+`export JAVA_HOME=/usr/lib/jvm/java-7-java-8-oracle` 本次安装的这个，所以写这个不写jdk7了<br>
+#### 修改core-site.xml
+sudo gedit /usr/local/hadoop/etc/hadoop/core-site.xml <br>
+`<configuration>
+<property>
+	<name>fs.default.name</name>
+	<value>hdfs://localhost:9000</value>
+</property>
+</configuration>`
+
+Step3 修改yarn-site.xml <br>
+sudo gedit /usr/local/hadoop/etc/hadoop/yarn-site.xml <br>
+在之間，輸入下列內容:
+yarn.nodemanager.aux-services mapreduce_shuffle yarn.nodemanager.aux-services.mapreduce.shuffle.class org.apache.hadoop.mapred.ShuffleHandler <br>
+Step4 修改mapred-site.xml
+sudo cp /usr/local/hadoop/etc/hadoop/mapred-site.xml.template /usr/local/hadoop/etc/hadoop/mapred-site.xml sudo gedit /usr/local/hadoop/etc/hadoop/mapred-site.xml
+在之間，輸入下列內容:
+mapreduce.framework.name yarn
+Step5 修改hdfs-site.xml
+sudo gedit /usr/local/hadoop/etc/hadoop/hdfs-site.xml
+在之間，輸入下列內容:
+   dfs.replication    3    dfs.namenode.name.dir    file:/usr/local/hadoop/hadoop_data/hdfs/namenode    dfs.datanode.data.dir    file:/usr/local/hadoop/hadoop_data/hdfs/datanode  
+ 
