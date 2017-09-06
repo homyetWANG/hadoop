@@ -40,7 +40,8 @@ cat ~/.ssh/id_dsa.pub >> ~/.ssh/authorized_keys <br>
 ### 3)下载安装hadoop <br>
 wget http://ftp.twaren.net/Unix/Web/apache/hadoop/common/hadoop-2.6.0/hadoop-2.6.0.tar.gz  <br>
 `wget`下载 <br>
-sudo tar -zxvf hadoop-2.6.0.tar.gz <br>
+sudo tar -zxvf Hadoop-2.6.0.tar.gz <br>
+sudo tar -zxvf `Hadoop-3.0.0-alpha4.tar.gz` 本次下载、安装的这个<br>
 `tar` 解压 <br>
 sudo mv hadoop-2.6.0 /usr/local/hadoop <br>
 `mv` move 移动到指定目录 <br>
@@ -48,3 +49,20 @@ sudo mv hadoop-2.6.0 /usr/local/hadoop <br>
  `ll`查看指定目录 <br>
  
  ### 4)设置环境变量 <br>
+ sudo gedit ~/.bashrc <br>
+编辑  该文件 <br>
+>>export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64 <br>
+`export JAVA_HOME=/usr/lib/jvm/java-8-oracle`本次安装的这个，所以写这个不写jdk7了 <br>
+
+>> export HADOOP_HOME=/usr/local/hadoop  <br>
+>> export PATH=$PATH:$HADOOP_HOME/bin  <br>
+export PATH=$PATH:$HADOOP_HOME/sbin  <br>
+export HADOOP_MAPRED_HOME=$HADOOP_HOME  <br>
+export HADOOP_COMMON_HOME=$HADOOP_HOME  <br>
+export HADOOP_HDFS_HOME=$HADOOP_HOME  <br>
+export YARN_HOME=$HADOOP_HOME  <br>
+export HADOOP_COMMON_HOME=$HADOOP_HOME  <br>
+export HADOOP_HDFS_HOME=$HADOOP_HOME  <br>
+export YARN_HOME=$HADOOP_HOME  <br>
+export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib"  <br>
+export JAVA_LIBRARY_PATH=$HADOOP_HOME/lib/native:$JAVA_LIBRARY_PATH
