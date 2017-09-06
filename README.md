@@ -136,3 +136,11 @@ hadoop namenode -format 将HDFS格式化<br>
 * `start-yarn.sh` 启动MapReduce YARN框架<br>
 * `start-all.sh` 同时启动以上两个 <br>
 [hadoop启动警告，运行start-dfs.sh时](http://blog.sina.com.cn/s/blog_6178edda0102x0er.html "my blog") 在尝试启动时遇到的情况，同时给出解决方法  <br>
+* `jps` 查看进程是否启动 <br>
+
+### 4.8)查看 Resource Manager和 NameNode HDFS 界面
+打开火狐浏览器，地址栏输入http://localhost:8088/ Resource Manager界面 <br>
+打开火狐浏览器，地址栏输入http://localhost:9870/ NameNode HDFS界面（[关于http://localhost:50070/地址打不开界面的问题](http://blog.sina.com.cn/s/blog_6178edda0102x0ex.html "my blog")可以查看这个） <br>
+
+
+## 5.
