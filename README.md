@@ -125,6 +125,6 @@ sudo gedit /usr/local/hadoop/etc/hadoop/hdfs-site.xml <br>
 ### 4.6)创建并格式化HDFS目录
 sudo mkdir -p /usr/local/hadoop/hadoop_data/hdfs/namenode 创建NameNode数组存储目录 <br>
 sudo mkdir -p /usr/local/hadoop/hadoop_data/hdfs/datanode 创建DataNode数组存储目录 <br>
-sudo chown hduser:hduser -R /usr/local/hadoop `sudo chown hom:hom -R /usr/local/hadoop`将hadoop目录所有者变更hduser（这里我运行时出现问题，没有用户然后创建了用户后面有不能格式化namenode，所以我就又改为hom了） <br>
+sudo chown hduser:hduser -R /usr/local/hadoop `sudo chown hom:hom -R /usr/local/hadoop`将hadoop目录所有者变更hduser（[这里我运行时出现问题，没有用户然后创建了用户后面有不能格式化namenode，所以我就又改为hom了](http://blog.sina.com.cn/s/blog_6178edda0102x0cs.html "4.6问题的我的博客")） <br>
 
 hadoop namenode -format 将HDFS格式化<br>
