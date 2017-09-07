@@ -143,4 +143,23 @@ hadoop namenode -format 将HDFS格式化<br>
 打开火狐浏览器，地址栏输入http://localhost:9870/ NameNode HDFS界面（[关于http://localhost:50070/地址打不开界面的问题](http://blog.sina.com.cn/s/blog_6178edda0102x0ex.html "my blog")可以查看这个） <br>
 
 
-## 5.
+
+## 5.Hadoop Multi Node Cluster的安装
+
+我们需要在建立几个虚拟机担任data node 的角色 <br>
+如图 <br>
+![]() <br>
+
+### 5.1)在虚拟机中克隆clone hadoop
+“hadoop”虚拟机右键克隆， 设置名称为“data1”，完全复制，完成 <br>
+选择“data1”右键设置-网络-网卡1-NAT链接方式，同时选项卡-网卡2-勾选启用并选择host-only链接方式。确定 <br>
+
+默认的的网卡IP段·192.168.56.X
+所以准备设置如下： <br>
+master：192.168.56.100 <br>
+data1：192.168.56.101 <br>
+data2：192.168.56.102 <br>
+data3：192.168.56.103 <br>
+
+### 5.2)
+ <br>
