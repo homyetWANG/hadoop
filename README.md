@@ -148,7 +148,7 @@ hadoop namenode -format 将HDFS格式化<br>
 
 我们需要在建立几个虚拟机担任data node 的角色 <br>
 如图 <br>
-![]() <br>
+![](https://github.com/homyetWANG/hadoop/raw/master/5.png) <br>
 
 ### 5.1)在虚拟机中克隆clone hadoop
 “hadoop”虚拟机右键克隆， 设置名称为“data1”，完全复制，完成 <br>
