@@ -161,8 +161,9 @@ data1：192.168.56.101 <br>
 data2：192.168.56.102 <br>
 data3：192.168.56.103 <br>
 
-### 5.2)
-sudo gedit  `cc` <br>
+### 5.3)
+* 设置固定IP NAT网卡和 host-only网卡
+sudo gedit /etc/network/interfaces  `编辑interfaces网络配置文件` <br>
 \# NAT interface  <br>
 auto eth0  <br>
 iface eth0 inet dhcp  <br>
@@ -174,5 +175,34 @@ address		192.168.56.101  <br>
 netmask		255.255.255.0  <br>
 network		192.168.56.0  <br>
 broadcast	192.168.56.255  <br>
+
+sudo gedit /etc/hostname
+输入data1 入力
+
+sudo gedit /etc/hosts
+追加以下代码　次のコードをファイルに追加する
+\# Ip address
+192.168.56.100	master
+192.168.56.101  data1
+192.168.56.102  data2
+192.168.56.103  data3
+
+sudo gedit /usr/local/hadoop/etc/hadoop/core-site.xml
+替换以下代码 <value>を次のように替える
+<value>hdfs://master:9000</value>
+
+sudo gedit /usr/local/hadoop/etc/hadoop/yarn-site.xml
+<property>
+	<name>yarn.resourcemanager.resource-tracker.address</name>
+	<value>master:8025</value>
+</property>
+<property>
+	<name>yarn.resourcemanager.scheduler.address</name>
+	<value>master:8030</value>
+</property>
+<property>
+	<name>yarn.resourcemanager.address</name>
+	<value>master:8050</value>
+</property>
 
 
