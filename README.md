@@ -162,4 +162,17 @@ data2：192.168.56.102 <br>
 data3：192.168.56.103 <br>
 
 ### 5.2)
- <br>
+sudo gedit  `cc` <br>
+/# NAT interface  <br>
+auto eth0  <br>
+iface eth0 inet dhcp  <br>
+
+#host only interface   <br>
+auto eth0  <br>
+iface eth1 inet static  <br>
+address		192.168.56.101  <br>
+netmask		255.255.255.0  <br>
+network		192.168.56.0  <br>
+broadcast	192.168.56.255  <br>
+
+
