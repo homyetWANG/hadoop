@@ -163,11 +163,11 @@ data3：192.168.56.103 <br>
 
 ### 5.2)
 sudo gedit  `cc` <br>
-/# NAT interface  <br>
+\# NAT interface  <br>
 auto eth0  <br>
 iface eth0 inet dhcp  <br>
 
-#host only interface   <br>
+\# host only interface   <br>
 auto eth0  <br>
 iface eth1 inet static  <br>
 address		192.168.56.101  <br>
