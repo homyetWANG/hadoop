@@ -205,4 +205,6 @@ sudo gedit /usr/local/hadoop/etc/hadoop/yarn-site.xml
 	<value>master:8050</value>
 </property>
 
+![](https://github.com/homyetWANG/hadoop/raw/master/imageForMe/6.png "Apache Hadoop YARN") <br>
+
 
