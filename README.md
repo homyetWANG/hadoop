@@ -1,9 +1,9 @@
-# hadoop学习笔记
+# hadoop学习笔记　Hadoop開発のメモ
 
-基础知识
+基础知识　基礎知識
 ========
 
-## 1.基础
+## 1.基础　基礎
 
 hadoop `HDFS` 分布式文件系统 <br>
 hadoop `MapReduce 2.0 YARN` <br>
@@ -11,7 +11,7 @@ hadoop `MapReduce 2.0 YARN` <br>
 机器学习 <br>
 
 
-## 2/3. 系统和虚拟机的安装
+## 2/3. 系统和虚拟机的安装　システムと仮想マシンのインストール
 
 Virtual box 下的虚拟机的安装 <br>
 先安装虚拟机，然后在虚拟机中创建linux机器。之后下载ubuntu镜像iso，在linux机器的设置-存储中添加该镜像设备。启动linux。出现安装界面 <br>
@@ -20,7 +20,7 @@ Virtual box 下的虚拟机的安装 <br>
 在Linux虚拟机的选项卡-设备-共享剪贴板-双向 <br>
 
 
-## 4.hadoop single node cluster的安装;
+## 4.hadoop single node cluster的安装;　～のインストール
 
 ### 4.1)安装JDK <br>
 java -version <br>
@@ -206,5 +206,7 @@ sudo gedit /usr/local/hadoop/etc/hadoop/yarn-site.xml
 </property>
 
 ![](https://github.com/homyetWANG/hadoop/raw/master/imageForMe/6.png "Apache Hadoop YARN") <br>
+
+### 5.4)复制data1到data2，data3，master　data1をクローンしてdata2,data3,masterになる
 
 
