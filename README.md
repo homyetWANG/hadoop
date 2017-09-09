@@ -206,6 +206,7 @@ sudo gedit /usr/local/hadoop/etc/hadoop/yarn-site.xml
 </property>
 
 ![](https://github.com/homyetWANG/hadoop/raw/master/imageForMe/6.png "Apache Hadoop YARN") <br>
+[Apache Hadoop YARN](http://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html) <br>
 
 ### 5.4)复制data1到data2，data3，master　data1をクローンしてdata2,data3,masterになる
 
