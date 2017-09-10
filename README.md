@@ -211,3 +211,4 @@ sudo gedit /usr/local/hadoop/etc/hadoop/yarn-site.xml
 ### 5.4)复制data1到data2，data3，master　data1をクローンしてdata2,data3,masterになる
 
 
+### 5.5)
