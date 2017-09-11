@@ -164,12 +164,13 @@ data3：192.168.56.103 <br>
 ### 5.3)
 * 设置固定IP NAT网卡和 host-only网卡
 sudo gedit /etc/network/interfaces  `编辑interfaces网络配置文件` <br>
+
 \# NAT interface  <br>
 auto eth0  <br>
 iface eth0 inet dhcp  <br>
 
 \# host only interface   <br>
-auto eth0  <br>
+auto eth1  <br>
 iface eth1 inet static  <br>
 address		192.168.56.101  <br>
 netmask		255.255.255.0  <br>
