@@ -214,6 +214,7 @@ sudo gedit /usr/local/hadoop/etc/hadoop/yarn-site.xml
 
 ### 5.5)
 
-
+日志
+------------
  >> 出现了问题需要查看日志，日志查看方法需要学习
  >> [Hadoop 2.6 日志文件和MapReduce的log文件研究心得](http://blog.csdn.net/infovisthinker/article/details/45370089)
