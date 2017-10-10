@@ -224,3 +224,6 @@ mapreduce.jobhistory.address <br>
 master:10020
 
 完全分布式不能启动datanode原因？
+
+
+不会？？
